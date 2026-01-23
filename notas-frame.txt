@@ -1,0 +1,3 @@
+- OQ É E COMO FUNCIONA - 
+
+Os iframes sao tags onde é possivel incluir uma outra pagina html ou site. São normalmente usados para anexar videos ou mapas dentro do seu site. Voce pode configurar o tamanho para colocar em uma determinada parte do seu site.

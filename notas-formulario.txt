@@ -1,0 +1,10 @@
+- TAGS FORMULARIO -
+
+form - É a tag mais recomendada para ser usada em formularios, alem de ajudar o dev e o navegador a se localizar dentro do codigo, ele tem funções importantes como 'action' e 'autocomplete' por exemplo, que ajuda a melhorar mais ainda a estrutura do codigo, alem de validação de dados como email e senha de forma segura.
+
+action - Tag de ação para envio de dados para uma determinada linguagem de banco de dados ou armazenamento de dados.
+
+label - Identificador de dados para o navegador, onde vc informa o tipo de dado que irá ser acrescentado no input. Tem tambem a função de aumentar a sensibilidade maior do clique no navegador e celular.
+
+input - caixinha onde tem várias funções para entrada e envio de dados como nome, email e botao de envio de dados.
+

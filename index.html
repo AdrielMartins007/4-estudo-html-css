@@ -13,7 +13,8 @@
         background-color: lightgray;
         margin: 20px;
     }
-    input{
+
+    input {
         border-radius: 5px;
         border: 0px;
     }
@@ -23,9 +24,11 @@
 
     <h1>Meu primeiro formulario</h1>
 
-    <form>
-        <p>nome: <input type="text" name="nome" placeholder="nome"></p>
-        <p>sobrenome: <input type="text" name="sobrenome" placeholder="sobrenome"></p>
+    <!-- caso vc queira submiter os dados dentro de um banco de dados, a tag "action" faz isso, basta informar para qual arquivo ela vai submiter os dados -->
+    <form action="cadastro.php" autocomplete="off"><!-- comando para desligar as sugestoes do navegador -->
+        <p><label for="inome">nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <!-- comando label para melhorar o identificador do navegador -->
 
         <input type="submit" value="enviar">
         <!-- input que cria um botao para vc enviar os dados ou criar qualquer outra função -->

@@ -8,3 +8,23 @@ label - Identificador de dados para o navegador, onde vc informa o tipo de dado 
 
 input - caixinha onde tem várias funções para entrada e envio de dados como nome, email e botao de envio de dados.
 
+get - metodo onde os dados que foram enviados dentro do formulario ficam visiveis dentro da url do navegador, normalmente ele fica ativo automaticamente.
+
+post - metodo mais seguro os dados 'sensiveis' nao aparecem na url de navegação.
+
+autocomplete - tag que permite que o navegador de sugestoes para o nome ou senha de usuario. Existe uma diferença, se caso for usado dentro do 'form', so tem duas opções o 'on' e o 'off'. Dentro do input vc tem varias opções e ajuda mais ainda o navegador a dar sugestoes de nome e senha, quer seja nova ou antiga.
+
+- TAG DE OBRIGATORIEDADE -
+
+required - Comando que obriga o usuario a digitar os dados para nao enviar nulo, essa tag é incluida dentro do input.
+
+minlength - Comando que limita a quantidade de caracteres dentro do input.
+
+maxlength - comando que maximiza a quantidade de caracteres no input.
+
+- ESTETICA -
+
+size - Determina o tamanho da caixa input.
+
+placeholder - Comando que insere um texto dentro do inputo, uma dica.
+

@@ -8,31 +8,63 @@
 </head>
 
 <style>
-    body {
+    #prim-section {
         font-family: sans-serif;
         background-color: lightgray;
         margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
     }
 
     input {
         border-radius: 5px;
         border: 0px;
     }
+
+    #seg-section {
+        font-family: sans-serif;
+        background-color: lightblue;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
 </style>
 
 <body>
 
-    <h1>Meu primeiro formulario</h1>
+    <section id="prim-section">
+        <h1>Meu primeiro formulario</h1>
+        <!-- caso vc queira submiter os dados dentro de um banco de dados, a tag "action" faz isso, basta informar para qual arquivo ela vai submiter os dados -->
+        <form action="cadastro.php" autocomplete="off"><!-- comando para desligar as sugestoes do navegador -->
+            <p><label for="inome">nome:</label> <input type="text" name="nome" id="inome"></p>
+            <p><label for="isobrenome">sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+            <!-- comando label para melhorar o identificador do navegador -->
+            <input type="submit" value="enviar">
+            <!-- input que cria um botao para vc enviar os dados ou criar qualquer outra função -->
+        </form>
+    </section>
 
-    <!-- caso vc queira submiter os dados dentro de um banco de dados, a tag "action" faz isso, basta informar para qual arquivo ela vai submiter os dados -->
-    <form action="cadastro.php" autocomplete="off"><!-- comando para desligar as sugestoes do navegador -->
-        <p><label for="inome">nome:</label> <input type="text" name="nome" id="inome"></p>
-        <p><label for="isobrenome">sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
-        <!-- comando label para melhorar o identificador do navegador -->
+    <section id="seg-section">
+        <h1>Cadastro</h1>
 
-        <input type="submit" value="enviar">
-        <!-- input que cria um botao para vc enviar os dados ou criar qualquer outra função -->
-    </form>
+        <form autocomplete="on">
+            <p>
+                <label for="inome">nome:</label>
+                <input type="text" required minlength="5" maxlength="20" size="20" placeholder="insira seu nome" autocomplete="username">
+            </p>
+            <p>
+                <label for="isenha">senha:</label>
+                <input type="password" required minlength="5" maxlength="10" size="20" placeholder="insira sua senha" autocomplete="new-password">
+                <!-- 'required' é o comando que obriga o usuario a digitar os dados para nao enviar nulo. -->
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </p>
+        </form>
+    </section>
 
 
 </body>

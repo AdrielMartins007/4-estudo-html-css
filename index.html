@@ -30,9 +30,20 @@
         border-radius: 10px;
         text-align: center;
     }
+
+    #terc-section{
+        font-family: sans-serif;
+        background-color: lightgreen;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
 </style>
 
 <body>
+
+    <!-- COMANDOS PARA PRIMEIRO FORMULARIO -->
 
     <section id="prim-section">
         <h1>Meu primeiro formulario</h1>
@@ -45,6 +56,8 @@
             <!-- input que cria um botao para vc enviar os dados ou criar qualquer outra função -->
         </form>
     </section>
+
+    <!-- TAGS UTEIS PARA O FORMULARIO -->
 
     <section id="seg-section">
         <h1>Cadastro</h1>
@@ -63,6 +76,28 @@
                 <input type="submit" value="enviar">
                 <input type="reset" value="limpar">
             </p>
+        </form>
+    </section>
+
+    <section id="terc-section">
+        <form>
+            <h1>Elementos para Formulario</h1>
+
+            <p>Nome: <input type="text" required></p>
+
+            <p>Email: <input type="email" required></p>
+
+            <p>Nota: <input type="number" step="0.1"></p>
+            <!-- comando step para aceitar numeros decimais e ainda dar um aumento nas setas da quantidade que vc informar -->
+
+            <p>Qual o mes: <input type="month"></p> 
+
+            <p>Data: <input type="date"></p>
+
+            <p>Hora: <input type="time" name="" id=""></p>
+
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
         </form>
     </section>
 

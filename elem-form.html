@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementos form</title>
+</head>
+
+<style>
+    * {
+        text-transform: capitalize;
+        font-family: arial, sans-serif;
+    }
+
+    body {
+        background-color: lightyellow;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .botoes {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .botoes input{
+        border-radius: 5px;
+        border: 0px;
+        padding: 5px;
+    }
+
+    form{
+        background-color: lightgreen;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    legend{
+        text-align: center
+    }
+
+    fieldset{
+        padding: 10px;
+    }
+
+    textarea{
+        display: block;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+
+    <form>
+        <h1>elementos formulario</h1>
+
+        Selecione o estado:
+        <select name="estado" id="estado">
+            <!-- a tag 'select' cria um botao de opções com dados dentro -->
+            <optgroup label="primeira tabela">
+                <!-- optgroup ela separa os itens dentro da tabelinha por grupos -->
+                 <option value="">-- escolha --</option>
+                <option value="pará">pará</option>
+                <!-- tag 'option' para incluir os dados dentro do botao -->
+                <option value="maranhao">maranhao</option>
+                <option value="minas gerais">minas gerais</option>
+                <option value="belo-horizonte">belo-horizonte</option>
+            </optgroup>
+
+            <optgroup label="segunda tabela">
+                <option value="sao paulo">sao paulo</option>
+                <option value="rio de janeiro">rio de janeiro</option>
+                <option value="bahia">bahia</option>
+                <option value="acre">acre</option>
+            </optgroup>
+        </select>
+
+        <p>Selecione sua profissão
+        <input type="text" list="profissoes">
+        <datalist id="profissoes">
+            <!-- comando para criar um caixa de texto onde o usuario pode selecionar o texto que será inserido -->
+            <option>administrador</option>
+            <option>tecnico em informatica</option>
+            <option>professor</option>
+            <option>engenheiro</option>
+        </datalist>
+
+        <fieldset>
+            <legend>comentarios</legend>
+            <textarea name="comentarios" cols="30" rows="10" ></textarea>
+        </fieldset>
+
+        <div class="botoes">
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </div>
+    </form>
+
+</body>
+
+</html>

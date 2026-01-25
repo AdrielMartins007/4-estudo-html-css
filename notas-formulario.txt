@@ -32,3 +32,19 @@ fieldset - Tag que envelopa uma parte dos usuarios determinando sua importancia 
 
 legend - Tag para colocar uma legenda, nesse exemplo foi colocado dentro do 'fieldset'.
 
+- OUTROS ELEMENTOS -
+
+select - Tag para criar um botao onde o usuario ira selecionar as opções sugeridas dentro do input{
+
+    option - É aqui que vc vai colocar as opções que irá aparecer no 'select', fica visivel para o usuario escolher.
+
+    optgroup - Nas opções do 'select', vc pode separar as opções/nomes por grupos.
+
+}
+
+datalist - Tag para criação de uma caixinha de texto que pode ser digita ou escolhida pelo usuario, ja que ela aparece opções de digitação. Para incluir os dados usa-se a tag 'option'.
+
+textarea - Tag que cria um caixinha de texto para o usuario escrever dentro dela e mandar para o banco de dados.
+
+
+

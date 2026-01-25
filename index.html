@@ -8,6 +8,10 @@
 </head>
 
 <style>
+    * {
+        text-transform: capitalize;
+    }
+
     #prim-section {
         font-family: sans-serif;
         background-color: lightgray;
@@ -40,9 +44,23 @@
         text-align: center;
     }
 
-    fieldset{
+    fieldset {
         border: 2px solid black;
         border-radius: 10px;
+    }
+
+    #quart-section {
+        font-family: sans-serif;
+        background-color: lightskyblue;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: justify;
+    }
+
+    #quart-section #botoes {
+        text-align: center;
+        margin-top: 20px;
     }
 </style>
 
@@ -110,7 +128,34 @@
             <input type="reset" value="limpar">
         </form>
     </section>
+    <section id="quart-section">
+        <form>
 
+            <fieldset>
+                <legend>Linguagens que você conhece</legend>
+                <input type="checkbox" id="c++"><label for="c++">c++</label><br>
+                <input type="checkbox" id="html"><label for="html">html</label><br>
+                <input type="checkbox" id="css"><label for="css">css</label><br>
+                <input type="checkbox" id="javaScript"><label for="javaScript">javaScript</label><br>
+                <input type="checkbox" id="php"><label for="php">php</label><br>
+                <input type="checkbox" id="nodeJs"><label for="nodeJs">nodeJs</label><br>
+                <input type="checkbox" id="java"><label for="java">Java</label><br>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>escolha o sexo</legend>
+
+                <input type="radio" name="sexo">masculino<br>
+                <input type="radio" name="sexo">feminino
+                <!-- para radio os itens precisam ter o mesmo nome -->
+            </fieldset>
+
+            <div id="botoes">
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </div>
+        </form>
+    </section>
 
 </body>
 

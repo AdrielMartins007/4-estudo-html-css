@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+</head>
+
+<style>
+    * {
+        text-transform: capitalize;
+        font-family: arial, sans-serif;
+    }
+
+    body {
+        background-color: lightgray;
+    }
+
+    form{
+        background-color: lightsalmon;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    form h1{
+        text-align: center;
+    }
+
+    form input{
+        border-radius: 6px;
+        border: 0px;
+    }
+</style>
+
+<body>
+
+    <form>
+        <h1>elementos output</h1>
+
+        <p>primeiro numero: <input type="number" id="num1" oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)"></p>
+        <p>segundo numero: <input type="number" id="num2" oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)"></p>
+        <!-- comando de javascript para somar dois numeros e exibir no 'soma' -->
+
+        <p>soma: <output id="soma">0</output></p>
+    </form>
+
+</body>
+
+</html>

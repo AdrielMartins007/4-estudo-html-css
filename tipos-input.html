@@ -58,9 +58,18 @@
         text-align: justify;
     }
 
-    #quart-section #botoes {
+    .botoes {
         text-align: center;
         margin-top: 20px;
+    }
+
+    #quint-section {
+        font-family: sans-serif;
+        background-color: lightgreen;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
     }
 </style>
 
@@ -150,10 +159,29 @@
                 <!-- para radio os itens precisam ter o mesmo nome -->
             </fieldset>
 
-            <div id="botoes">
+            <div class="botoes">
                 <input type="submit" value="enviar">
                 <input type="reset" value="limpar">
             </div>
+        </form>
+    </section>
+
+    <section id="quint-section">
+        <form>
+            <fieldset>
+                <legend>outros tipos de input</legend>
+                <p>selecione a cor: <input type="color"></p>
+                <p>escolha o nivel: <input type="range" min="1" max="6"></p>
+                <!-- vc pode estar selecionando o valor minimo e maximo do range -->
+                <p>anexar arquivo: <input type="file"></p>
+                <!-- input que permite usuario selecionar e carregar arquivo, é importante sempre usar o metodo 'post' para o usuario poder enviar-->
+            </fieldset>
+
+            <div class="botoes">
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </div>
+
         </form>
     </section>
 

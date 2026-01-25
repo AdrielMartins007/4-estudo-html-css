@@ -28,3 +28,7 @@ size - Determina o tamanho da caixa input.
 
 placeholder - Comando que insere um texto dentro do inputo, uma dica.
 
+fieldset - Tag que envelopa uma parte dos usuarios determinando sua importancia ou função.
+
+legend - Tag para colocar uma legenda, nesse exemplo foi colocado dentro do 'fieldset'.
+

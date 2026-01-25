@@ -31,13 +31,18 @@
         text-align: center;
     }
 
-    #terc-section{
+    #terc-section {
         font-family: sans-serif;
         background-color: lightgreen;
         margin: 20px;
         padding: 20px;
         border-radius: 10px;
         text-align: center;
+    }
+
+    fieldset{
+        border: 2px solid black;
+        border-radius: 10px;
     }
 </style>
 
@@ -65,11 +70,13 @@
         <form autocomplete="on">
             <p>
                 <label for="inome">nome:</label>
-                <input type="text" required minlength="5" maxlength="20" size="20" placeholder="insira seu nome" autocomplete="username">
+                <input type="text" required minlength="5" maxlength="20" size="20" placeholder="insira seu nome"
+                    autocomplete="username">
             </p>
             <p>
                 <label for="isenha">senha:</label>
-                <input type="password" required minlength="5" maxlength="10" size="20" placeholder="insira sua senha" autocomplete="new-password">
+                <input type="password" required minlength="5" maxlength="10" size="20" placeholder="insira sua senha"
+                    autocomplete="new-password">
                 <!-- 'required' é o comando que obriga o usuario a digitar os dados para nao enviar nulo. -->
             </p>
             <p>
@@ -83,18 +90,21 @@
         <form>
             <h1>Elementos para Formulario</h1>
 
-            <p>Nome: <input type="text" required></p>
-
-            <p>Email: <input type="email" required></p>
+            <fieldset><!-- tag para envelopar uma determinada parte do formulario -->
+                <legend>dados pessoais</legend><!-- tag para legenda do fieldset -->
+                <p>Nome: <input type="text" required></p>
+                <p>Email: <input type="email" required></p>
+                <p>Telefone: <input type="tel"></p>
+            </fieldset>
 
             <p>Nota: <input type="number" step="0.1"></p>
             <!-- comando step para aceitar numeros decimais e ainda dar um aumento nas setas da quantidade que vc informar -->
 
-            <p>Qual o mes: <input type="month"></p> 
+            <p>Qual o mes: <input type="month"></p>
 
             <p>Data: <input type="date"></p>
 
-            <p>Hora: <input type="time" name="" id=""></p>
+            <p>Hora: <input type="time"></p>
 
             <input type="submit" value="enviar">
             <input type="reset" value="limpar">

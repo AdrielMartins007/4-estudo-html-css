@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+/* COMANDO PARA TELA VERTICAL */
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(https://i.pinimg.com/originals/69/85/6a/69856a2ae935223e1eb76da17b0dfcf9.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+/* PARA TELA NA HORIZONTAL */
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(https://images.photowall.com/products/70955/exoplanet-in-deep-space.jpg?h=699&q=85);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}

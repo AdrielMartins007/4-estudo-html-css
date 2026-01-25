@@ -1,0 +1,7 @@
+- TIPOS DE TELA OU MEDIA -
+
+Toda tela - Para ocupar toda tela, dentro do link de css vc chama a tag 'media' e inclui o comando 'all'.
+
+Vertical - Para tela vertical(celulares), dentro do 'media' vc inclui 'screen and (orientation: portrait)'.
+
+horizontal - Para telas nas horizontais(celular deitado, notebooks) usa-se: 'screen and (orientation: landscape)'.

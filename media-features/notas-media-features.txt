@@ -5,3 +5,21 @@ Toda tela - Para ocupar toda tela, dentro do link de css vc chama a tag 'media' 
 Vertical - Para tela vertical(celulares), dentro do 'media' vc inclui 'screen and (orientation: portrait)'.
 
 horizontal - Para telas nas horizontais(celular deitado, notebooks) usa-se: 'screen and (orientation: landscape)'.
+
+- TYPICAL DEVICE BREAKPOINT -
+
+Tamanho de telas{
+    pequenas telas = até 600px;
+    celular = de 600px até 768px;
+    tablet = de 768px até 992px;
+    desktop = 992px até 1200px;
+    grandes telas = acima de 1200px;
+}
+
+- INCLUIR TAMANHO DE CADA TELA -
+
+Dentro da tag '@media' vc pode incluir o tamanho exato de cada tela{
+
+    '@media screen and (min-width: 600px) and (max-width: 768px)'
+    
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diferentes telas</title>
+</head>
+
+<style>
+    /* 
+
+    Tamanho de telas{
+
+    pequenas telas = até 600px;
+    celular = de 600px até 768px;
+    tablet = de 768px até 992px;
+    desktop = 992px até 1200px;
+    grandes telas = acima de 1200px;
+}
+
+    */
+
+    body {
+        background-color: black;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    p{
+        font-size: 40px;
+        margin-top: 20vh;
+    }
+
+    h1,
+    p {
+        color: white;
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+
+        /* PARA TELAS PEQUENAS E CELULARES */
+        body {
+            background-color: lightskyblue;
+        }
+
+        #tablet {
+            display: none;
+        }
+
+        #desktop {
+            display: none;
+        }
+
+        #telas-maiores {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+
+        /* PARA TABLETS */
+        body {
+            background-color: blue;
+        }
+
+        #celular {
+            display: none;
+        }
+
+        #desktop {
+            display: none;
+        }
+
+        #telas-maiores {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+        /* PARA DESKTOP */
+        body {
+            background-color: red;
+        }
+
+        #celular {
+            display: none;
+        }
+
+        #tablet {
+            display: none;
+        }
+
+        #telas-maiores {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        /* PARA TELAS MAIORES */
+        body {
+            background-color: green;
+        }
+
+        #celular {
+            display: none;
+        }
+
+        #tablet {
+            display: none;
+        }
+
+        #desktop {
+            display: none;
+        }
+
+    }
+</style>
+
+<body>
+
+    <h1>
+        TESTANDO MEDIA EM DIFERENTES TELAS
+    </h1>
+
+    <p id="celular">PARA CELULAR</p>
+    <p id="tablet">PARA TABLETS</p>
+    <p id="desktop">PARA DESKTOP</p>
+    <p id="telas-maiores">PARA TELAS MAIORES</p>
+
+</body>
+
+</html>

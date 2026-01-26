@@ -26,3 +26,21 @@ O proximo passo é vc inicar a funcao em javascript{
     resumindo a função, com o click ele ira desativar e ativar o display onde aparecerá os itens na tela.
 
 }
+
+- PARA SE ADAPTAR A TELAS MAIORES -
+
+Dentro do body, coloca-se a função que ira verificar o tamanho da tela{
+    onresize="mudouTamanho()";
+}
+
+Codigo java script para mudar o display assim que a tela for aumentada{
+
+    function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                opcoes.style.display = 'flex'
+            } else {
+                opcoes.style.display = 'none'
+            }
+        }
+        
+}

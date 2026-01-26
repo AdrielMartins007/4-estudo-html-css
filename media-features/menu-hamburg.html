@@ -24,10 +24,34 @@
     }
 
     header #opcoes {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
-    header a{
+    #opcoes {
+        display: none;
+    }
+
+    #botao {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 7px;
+        border-radius: 10px;
+        border: 0px;
+        cursor: pointer;
+        background-color: rgb(71, 70, 70);
+        color: white;
+        font-size: 20px;
+    }
+
+    button:hover {
+        background-color: rgb(97, 87, 87);
+    }
+
+    header a {
         text-decoration: none;
         color: black;
         background-color: white;
@@ -38,7 +62,7 @@
         margin-bottom: 15px;
     }
 
-    a:hover{
+    a:hover {
         background-color: rgb(231, 229, 229);
     }
 
@@ -61,6 +85,10 @@
     <header>
         <h1>TESTANDO MENU HAMBURGUER</h1>
 
+        <div id="botao">
+            <button onclick="clickMenu()">☰</button>
+        </div>
+
         <div id="opcoes">
             <a href="#">opção 1</a>
             <a href="#">opção 2</a>
@@ -75,19 +103,19 @@
             obcaecati necessitatibus ipsum labore maxime autem. In corrupti quae at facere laborum unde explicabo
             tenetur vero ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto, adipisci tempora
             soluta laboriosam pariatur accusantium quaerat eos! Ut architecto tempora assumenda quia, quae aliquam
-            officia libero aspernatur maxime necessitatibus.</p>
+            officia libero aspernatur maxime necessitatibus.</p><br>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat suscipit illo numquam quas odio. Ex,
             assumenda quae. Reprehenderit eum corporis facilis, quidem id cumque iure, assumenda optio aut quo deserunt.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit sunt at commodi officiis alias voluptatem
             reiciendis ipsum aspernatur dicta magnam itaque voluptatum sequi totam quia asperiores esse, obcaecati
-            laboriosam distinctio.</p>
+            laboriosam distinctio.</p><br>
 
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur incidunt impedit possimus beatae
             obcaecati necessitatibus ipsum labore maxime autem. In corrupti quae at facere laborum unde explicabo
             tenetur vero ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto, adipisci tempora
             soluta laboriosam pariatur accusantium quaerat eos! Ut architecto tempora assumenda quia, quae aliquam
-            officia libero aspernatur maxime necessitatibus.</p>
+            officia libero aspernatur maxime necessitatibus.</p><br>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat suscipit illo numquam quas odio. Ex,
             assumenda quae. Reprehenderit eum corporis facilis, quidem id cumque iure, assumenda optio aut quo deserunt.
@@ -95,6 +123,16 @@
             reiciendis ipsum aspernatur dicta magnam itaque voluptatum sequi totam quia asperiores esse, obcaecati
             laboriosam distinctio.</p>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (opcoes.style.display == 'block') {
+                opcoes.style.display = 'none'
+            } else {
+                opcoes.style.display = 'block'
+            }
+        }
+    </script>
 
 </body>
 

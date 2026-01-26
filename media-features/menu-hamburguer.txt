@@ -1,0 +1,28 @@
+- CRIAÇÃO DE UM BOTAO HAMBURGUER DE FORMA SIMPLES -
+
+Primeiro vc cria um botao onde vc vai estilizar a gosto{
+    ex:
+
+    <button onclick="clickMenu()">☰</button>
+
+    É necessario colocar o nome da função dentro do button 'clickMenu()'.
+}
+
+Outro ponto importante é colocar a div onde esta as opções como 'display: none;', isso irá fazer com que os itens sumam da sua tela e so apareçam quando vc clicar no botao.
+
+O proximo passo é vc inicar a funcao em javascript{
+    ex:
+
+    <script>
+        function clickMenu() {
+            if (opcoes.style.display == 'block') {
+                opcoes.style.display = 'none'
+            } else {g
+                opcoes.style.display = 'block'
+            }
+        }
+    </script>
+
+    resumindo a função, com o click ele ira desativar e ativar o display onde aparecerá os itens na tela.
+
+}

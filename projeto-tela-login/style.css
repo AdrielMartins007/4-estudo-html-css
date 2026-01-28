@@ -7,7 +7,7 @@ body {
     background-color: rgba(0, 0, 0, 0.79);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 
     main {
         background-image: url(imagens/montanha-vertical-black.jpg);
@@ -16,7 +16,7 @@ body {
         background-size: cover;
         background-attachment: fixed;
         margin-top: 5vh;
-        width: 80vw;
+        width: 80%;
         height: 80vh;
         border-radius: 15px;
         box-shadow: 0px 0px 5px black;
@@ -83,7 +83,7 @@ body {
         text-align: center;
         color: white;
         font-size: 11px;
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .texto-final a {
